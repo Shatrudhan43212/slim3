@@ -1,0 +1,827 @@
+@charset "utf-8";
+a, button, h1, h2, h3, h4, h5, h6, img, input, p, select { -webkit-transition: all .5s ease 0s; -moz-transition: all .5s ease 0s }
+img, img a { border: 0 }
+html { min-height: 100%; position: relative !important }
+body {margin: 0; padding: 0; overflow-x: hidden; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+a, div, h1, h2, h3, h4, h5, h6, img, input, li, p, select, ul { margin: 0; padding: 0; outline: 0!important; box-shadow: none; border: 0; list-style: none; font-weight: normal }
+a, button, h1, h2, h3, h4, h5, h6, img, input, p, select { transition: all .5s ease 0s }
+img { max-width: 100% }
+a:hover{text-decoration: none}
+a:focus{text-decoration: none}
+h1,h2,h3,h4,h5,h6{font-weight: bold;color: #333;}
+p{color: #333;}
+blockquote{padding: 0; border: 0}
+blockquote p{font-size: 16px; font-weight: normal; line-height: 21px;}
+.bg-holder { background-size: cover!important; background-position: 50% 50%; height: calc(100% - 40px); position: relative}
+.bgNone{background: none !important;}
+.p-0{padding: 0 !important;}
+.m-0{margin: 0 !important;}
+.mt-0{margin-top: 0 !important;}
+.mb-0{margin-bottom: 0 !important;}
+.mtColor{color: #D9AD58;}
+/*header*/
+header{background: #fff;}
+header .headerBox{display: block; background: #fff;}
+header .headerBox .logoBox{padding: 34px 10px 0; height: 100px; text-align: left;}
+header .headerBox .logoBox img{width: 106px; height: 53px; float: left; margin-right: 10px; margin-top: 10px;}
+header .headerBox .logoBox p{font-size: 16px; font-weight: 700; color: #00244A; line-height: 70px; text-transform: uppercase;}
+header .headerBox .logoBox p span{color: #D9AD58;}
+header .headerBox .infoBox{width: 100%;}
+header .headerBox .infoBox .infoTBox{display: inherit; justify-content: space-between;}
+header .headerBox .infoBox .infoTBox h4{font-size: 18px; text-transform: uppercase; color: #00244A; line-height: 50px; height: 50px; padding-right: 40px;}
+header .headerBox .infoBox .infoTBox h4 span{text-transform: initial; font-weight: 400; margin-right: 7px; font-size: 18px; font-weight: 400; color: #555;}
+header .headerBox .infoBox .infoTBox h4 span a{color: #F2A400; text-decoration: underline;}
+header .headerBox .infoBox .infoBBox{display: inherit; justify-content: space-between;}
+header .navBox{width: 100%;}
+header .navbar{margin: 0; border: 0; background: none; border-radius: 0;}
+header .navbar-nav{float: right; margin-right: 20px;}
+header .headerBox .infoBox .infoBBox h3{font-size: 20px; color: #fff; line-height: 60px; padding: 0 37px; text-transform: uppercase; margin: 25px 0 0; height: 60px; background: #D9AD58; border-radius: 5px; align-items: center; display: flex;}
+header .headerBox .infoBox .infoBBox h3 img{margin-right: 15px;}
+header .navbar-default .navbar-collapse{padding: 0;}
+header .navbar-default .container-fluid{padding: 0;}
+header .navbar-default .navbar-nav>li>a{color: #00244A; margin: 0; text-transform: uppercase; font-size: 15px; padding: 0 13.7px; line-height: 110px;}
+header .navbar-default .navbar-nav>li>a:hover{background: #bfcfdb;}
+
+header .Htop_bar{background: #255335;}
+header .Htop_bar h6{font-size: 12px; color: #fff; font-weight: normal; line-height: 30px; text-align: center; text-transform: uppercase;}
+header .Htop_bar h6 span{color: #D9AD58;}
+header .Htop_bar .infoTBox {justify-content: space-between; display: block;}
+header .H_rightbox{display: flex; align-items: center; justify-content: center; margin: 0 0 5px;}
+header .H_rightbox a {font-size: 12px !important; text-transform: uppercase; position: relative; margin: 0 18px; color: #fff; line-height: 30px;}
+header .H_rightbox a img {padding-right: 7px;}
+header .H_rightbox a::after {background: #D0D0D0; width: 1px; position: absolute; top: calc(50% - 11px); right: -25px;
+    content: ""; height: 22px;}
+header .H_rightbox a:last-child{margin-right: 0;}
+header .H_rightbox a:last-child::after{display: none;}
+
+
+header .navbar-toggle .icon-bar{width:22px;transition:all 0.2s;-webkit-transition:all 0.2s;}
+header .navbar-default .navbar-toggle{position:relative;padding-top:10px;z-index:100}
+header .navbar-toggle .top-bar{transform:rotate(45deg);-webkit-transform:rotate(45deg);transform-origin:10% 10%;-webkit-transform-origin:10% 10%;}
+header .navbar-toggle .middle-bar{opacity:0;}
+header .navbar-toggle .bottom-bar{transform:rotate(-45deg);transform-origin:10% 90%;-webkit-transform:rotate(-45deg);-webkit-transform-origin:10% 90%;}
+header .navbar-toggle.collapsed .top-bar{transform:rotate(0);-webkit-transform:rotate(0);}
+header .navbar-toggle.collapsed .middle-bar{opacity:1;}
+header .navbar-toggle.collapsed .bottom-bar{transform:rotate(0);-webkit-transform:rotate(0);}
+/*header*/
+
+/*banner*/
+.banner{background: url(../images/banner_bg.png) top center no-repeat; padding: 40px 0 40px; background-size: cover;}
+.banner .bannerLeftBox {padding: 0; text-align: center;}
+.banner .bannerLeftBox h6{font-size: 24px; color: #333333; text-transform: uppercase;}
+.banner .bannerLeftBox h1{font-size: 34px; color: #fff; margin: 15px 0 10px;}
+.banner .bannerLeftBox p{color: #fff; font-size: 18px;}
+.banner .bannerLeftBox a{background: #D9AD58; font-size: 18px; color: #fff; font-weight: bold; width: 230px; height: 60px; display: inline-block; line-height: 60px; border-radius: 3px; text-align: center; float: inherit; align-items: center; justify-content: space-between; margin-right: 25px;}
+
+
+.banner .topFormSec {padding: 15px 0 0;}
+.banner .topFormSec .radio {margin: 8px 0; display: block; color: #fff; position: relative; padding-left: 38px; cursor: pointer;  line-height: 30px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 16px; font-weight: 400; text-align: left;}
+.banner .topFormSec .radio input {position: absolute; opacity: 0; cursor: pointer;}
+.banner .topFormSec .checkround {position: absolute; top: 0; left: 0; height: 20px; width: 20px; 
+    border-color:#D9AD58; border-style:solid; border-width:1px; border-radius: 50%;}
+.banner .topFormSec .checkround:after {content: ""; position: absolute; display: none;}
+.banner .topFormSec .radio input:checked ~ .checkround:after {display: block;}
+.banner .topFormSec .radio .checkround:after {left: 3px; top: 3px; width: 12px; height: 12px; border-radius: 50%; background:#D9AD58;}
+.banner .topFormSec h2 {font-size: 18px; font-weight: bold; text-transform: inherit; color: #fff; margin: 0 0 15px; line-height: inherit; position: relative; text-align: left;}
+.banner .topFormSec h2::after {width: calc(100% - 210px); height: 1px; background: #D9AD58; position: absolute; content: ""; top: 14px;
+    right: 0;}
+    
+    .banner .fieldBox .fldBX{width: 100%; text-align: left;}
+.banner .fieldBox{display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 20px 0 0;}
+    .banner .fieldBox label{text-transform: uppercase; margin-bottom: 10px; font-size: 18px; color: #fff; font-weight: normal; }
+    .banner .fieldBox input{height: 40px; padding: 0 15px; border-radius: 3px; width:100%; margin: 0 0 12px; font-size: 18px;}
+    .banner .fieldBox select{background: url(../images/arrow.png) right 21px no-repeat #fff; appearance: none; -moz-appearance: none; -webkit-appearance: none; height: 40px; padding: 0 15px; border-radius: 3px; width:100%; margin: 0 0 12px; font-size: 18px;}
+    .banner ::-moz-placeholder{color:#333;opacity:inherit !important;}
+    .banner :-ms-input-placeholder{color:#333}
+    .banner ::-webkit-input-placeholder{color:#333}
+
+
+.banner .bannerLeftBox a:hover{color: #F4A527; background: #1F3756;}
+.formSection {background: #255335; padding: 25px 0; position: relative;}
+.formSection .bannerFormBox {border-radius: 10px; width: 100%; float: right; margin: 0}
+.formSection .bannerFormBox h2{font-size: 20px; font-weight: bold; color: #D9AD58; line-height: inherit; text-transform: inherit;     border-bottom: 1px solid #D9AD58; padding: 0 0 8px; margin: 0 0 13px;}
+
+.formSection .bannerFormBox .topFormSec{padding-left: 0;}
+.formSection .bannerFormBox .topFormSec p{font-size: 16px; color: #fff;}
+.formSection .bannerFormBox .topFormSec .radio {margin: 8px 0; display: block; position: relative; padding-left: 38px; cursor: pointer; color: #fff;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 16px; font-weight: 400;}
+.formSection .bannerFormBox .topFormSec .radio input {position: absolute; opacity: 0; cursor: pointer;}
+.formSection .bannerFormBox .topFormSec .checkround {position: absolute; top: 0; left: 0; height: 20px; width: 20px; background: none; 
+    border-color:#B2B2B2; border-style:solid; border-width:1px; border-radius: 50%;}
+.formSection .bannerFormBox .topFormSec .radio input:checked ~ .checkround {background-color: #fff;}
+.formSection .bannerFormBox .topFormSec .checkround:after {content: ""; position: absolute; display: none;}
+.formSection .bannerFormBox .topFormSec .radio input:checked ~ .checkround:after {display: block;}
+.formSection .bannerFormBox .topFormSec .radio .checkround:after {left: 3px; top: 3px; width: 12px; height: 12px; border-radius: 50%; background:#f4a527;}
+.formSection .bannerFormBox .botFormSec{padding: 15px; border-top: 1px solid #695C42; display: block;}
+.formSection .bannerFormBox .botFormSec ul{display: flex; flex-wrap: wrap;}
+.formSection .bannerFormBox .botFormSec ul li{background: url(../images/tick-sign.png) no-repeat 0 3px; color: #fff; font-size: 17px;
+    text-align: left; padding-left: 35px; width: 265px; margin: 0 0 20px;}
+.formSection .bannerFormBox .botFormSec h2{color: #fff; margin: 0 0 7px; text-align: center; width: 100%;}
+.formSection .bannerFormBox .botFormSec input.fullW{width: 100%;}
+.formSection .bannerFormBox .botFormSec input,select{height: 50px; padding: 0 15px; width: calc(54.1% - 15px); margin: 0 0 5px; font-size: 18px;}
+.formSection .bannerFormBox .botFormSec select{background: url(../images/arrow.png) right 21px no-repeat #fff; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+.formSection .bannerFormBox .botFormSec ::-moz-placeholder{color:#333;opacity:inherit !important;}
+.formSection .bannerFormBox .botFormSec :-ms-input-placeholder{color:#333}
+.formSection .bannerFormBox .botFormSec ::-webkit-input-placeholder{color:#333}
+.formSection .bannerFormBox .botFormSec button{background: #D9AD58; border: 0; border-radius: 3px; color: #fff; font-size: 18px; width: 100%; height: 60px; font-weight: bold;}
+/*banner*/
+
+.orderSec{background: #fff; margin: 30px 0 0;}
+.orderSec .col-md-12{display: block;}
+.orderSec .row > div > div{width: 100%;}
+.orderSec h3{font-size: 24px; margin: 0 0 0;}
+.orderSec .dividerH{width: 100px; height: 4px; background: #D9AD58; margin: 30px 0;}
+.orderSec p{font-size: 18px; line-height: 28px; margin: 0 0 20px;}
+.orderSec a{background: #D9AD58; border-radius: 3px; color: #fff; font-weight: 700; line-height: 60px; width: 260px; text-align: center; display: block; font-size: 18px; margin-bottom: 40px;}
+
+.homeList ul{width: 50%; float: left;}
+.homeList ul li{background: url(../images/tick-sign.png) no-repeat 0 3px; color: #333; font-size: 17px; text-align: left;
+    padding-left: 35px; width: 100%; margin: 0 0 10px;}
+
+
+/*infoSec*/
+.infoSec{padding:50px 0 80px}
+.infoSec h3{font-size: 20px; text-transform: uppercase; line-height: 30px; font-weight: bold; text-align: center; margin: 0 0 40px; padding: 0 15px;}
+.infoSec .infoSecBox{display: block;; justify-content: center; padding: 0 15px}
+.infoSec .middelinfoBox{margin: 40px 0 0}
+.infoSec .leftinfoBox{width: 100%; padding: 0;}
+.infoSec .leftinfoBox blockquote {margin: 0 0 30px; text-align: center;}
+.infoSec .leftinfoBox blockquote img{float: none; margin-right: 25px;}
+.infoSec .leftinfoBox blockquote h4{color: #333333; font-size: 22px; font-weight: bold; padding-left: 0; margin: 12px 0 15px;}
+.infoSec .rightinfoBox blockquote {text-align: left;}
+.infoSec .rightinfoBox blockquote h4{padding-right: 0; padding-left: 0;}
+.infoSec a{font-size: 18px; color: #fff; font-weight: bold; background: #F2A400; line-height: 60px; margin: 20px auto 0; width: 325px;
+    display: block; text-align: center; border-radius: 50px;}
+.infoSec a:hover{background: #00244A;}
+/*infoSec*/
+
+/*systemSec*/
+.systemSec{background: #1F3756; padding: 50px 0 30px;}
+.systemSec h3{font-size: 26px;color: #fff; line-height: 35px; font-weight: bold; text-align: center; margin: 0 0 40px;}
+.systemSec h3 span{font-size: 18px; font-weight: 400; display: block; text-transform: none; margin: 8px 0 0}
+.systemSec blockquote{padding:0 ; text-align: center; margin: 0 0 40px;}
+.systemSec blockquote figure{min-height: 75px;}
+.systemSec blockquote hr{width: 67px; border-top: 2px solid #D9AD58; margin-top: 15px; margin-bottom: 15px;}
+.systemSec blockquote p{font-size: 16px; color: #fff;line-height: 26px; margin: 0 35px 35px;}
+.systemSec blockquote h5{color: #fff; line-height: inherit; font-size: 18px; font-weight: bold; margin: 22px 0 0;}
+.systemSec blockquote h5 span{color: #D9AD58}
+.systemSec .numCir{width: 60px; height: 60px; background: #182E4B; font-size: 24px; font-weight: 700; color:#D9AD58; text-align: center; line-height: 60px; border-radius: 50%; display: inline-block;}
+/*systemSec*/
+
+.dontsec{margin: 0;}
+.dontsec h3{color: #333; line-height: inherit; font-size: 24px; font-weight: bold; margin: 20px 0 0;}
+.dontsec h3 span{color: #D9AD58}
+.dontsec p{font-size: 18px; color: #333;line-height: 26px; margin: 0 0 25px;}
+.dontsec hr{width: 141px; border-top: 4px solid #D9AD58; margin-top: 15px; margin-bottom: 35px; float: left;}
+
+.bgBack{background: #F2F2F2;}
+.mapBox{text-align: left; padding: 40px 20px 60px; position: relative;}
+.mapBox::after{background: #D9AD58; height: 1px; width: calc(100% - 40px); position: absolute; top: 6px; left: 20px; content: "";}
+.mapBox p{color: #02244A; font-size: 18px; line-height: 26px; margin: 35px 0;}
+.mapBox a{background: #D9AD58; border-radius: 3px; color: #fff; font-weight: 700; line-height: 60px; width: 230px; text-align: center; display: block; font-size: 18px; top: 20px; position: relative;}
+
+.mapBox .radio {margin: 0 0 20px; display: block; position: relative; padding-left: 45px; cursor: pointer; color: #02244A;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 18px; font-weight: 400;}
+.mapBox .radio input {position: absolute; opacity: 0; cursor: pointer;}
+.mapBox .checkround {position: absolute; top: -2px; left: 0; height: 27px; width: 27px; background: none; 
+    border-color:#B2B2B2; border-style:solid; border-width:1px; border-radius: 50%;}
+.mapBox .radio input:checked ~ .checkround {background-color: #fff;}
+.mapBox .checkround:after {content: ""; position: absolute; display: none;}
+.mapBox .radio input:checked ~ .checkround:after {display: block;}
+.mapBox .radio .checkround:after {left: 3px; top: 3px; width: 19px; height: 19px; border-radius: 50%; background:#f4a527;}
+
+.packPage {border: 1px solid #C6C6C6; padding: 25px; text-align: left;}
+.packPage .saveBox h3{font-size: 20px; line-height: 30px; color: #02244A;}
+.packPage .saveBox h3 span{color: #D9AD58; display: block;}
+.packPage .saveBox hr{width: 100%; border-top: 1px solid #D9AD58; margin-top: 10px; margin-bottom: 20px;}
+.packPage .saveBox p{font-size: 18px; line-height: 26px; color: #222; margin: 0 0 25px;}
+
+.pointBox h2{font-size: 24px; color: #00244A; text-transform: initial; margin: 0 0 30px; line-height: 30px;}
+.pointBox ul{padding: 0 !important; margin: 0 !important; display: flex; flex-wrap: wrap;}
+.pointBox ul li{width: 300px;}
+
+/*footer*/
+footer{margin: 0; background: #242A46; padding: 10px 0; text-align: center; color: #fff; text-transform: uppercase;}
+footer a{font-size: 14px !important; color: #fff}
+footer a:hover{color: #D9AD58}
+footer p{text-align: center; margin: 5px 0 0; color: #fff; font-size: 14px;}
+/*footer*/
+
+
+/*found*/
+.innerBannerSec{background: #255335; text-align: center; padding: 15px 0 130px;}
+.innerBannerSec h1{font-size: 20px; font-weight: bold; margin: 30px 10px 0; color: #fff;}
+.innerBannerSec h1 span{font-size: 17px; display: block; font-weight: normal; margin: 10px 0 0;}
+.innerBannerSec h3{font-size: 18px; color: #00244A; font-weight: bold; padding: 15px 0 25px; line-height: 30px;}
+.innerBannerSec h3 span{color: #FD8424; display: block;}
+.innerBannerSec a.conBtn{background: #F2A400; margin: 20px 0 0; border-radius: 5px; text-transform: uppercase; width: 90%; font-size: 20px; font-weight: bold; line-height: 60px; display: inline-block;}
+.innerBannerSec a.conBtn:hover{background: #00244A; color: #fff;}
+.compren_pnt{text-align: center; margin: -65px 0 0;}
+.compren_pnt h1{color: #02244A; background: #fff; font-size: 18px; font-weight: 700; text-align: left; margin: 0 0 20px; line-height: 27px; padding: 5px 10px;}
+.compren_pnt .row{margin: 0; background: #fff; padding: 0 0 20px;}
+.compren_pnt ul{border-right:0; padding: 0 20px 0; margin: 0 ;}
+.compren_pnt ul li{font-size: 16px; line-height: 33px;background: url(../images/sqPnt.jpg) 0 8px no-repeat; padding-left: 22px; text-align: left; color: #222;}
+
+.mapMainBox{margin: -90px 0 100px;}
+.mapMainBox .row{padding: 0;}
+
+.border {border: 0 !important;}
+.privacyTextBox {margin: 50px 0 0;}
+.privacyTextBox h3{font-size: 23px; font-weight: bold; border-bottom: 2px solid #D0D0D0; color: #02244A; padding: 0 0 9px; margin: 0 0 22px; line-height: 38px;}
+.privacyTextBox h3 span{color: #D9AD58;}
+.privacyTextBox p{font-size: 16px; font-weight: normal; line-height: 22px; margin: 0 0 30px;}
+.orderSummary{margin: 0 0 40px;}
+.orderSummary .leftSummaryBox{width: 100%; float: left; margin: 25px 0 0;}
+.orderSummary .leftSummaryBox h4{font-size: 24px;}
+.orderSummary .leftSummaryBox .sumTotalBox{background: #F2F2F2; padding: 25px 30px 35px; margin: 25px 0 0;}
+.orderSummary .leftSummaryBox .col-md-6{padding: 0;}
+.orderSummary .leftSummaryBox p{font-size: 18px;}
+.orderSummary .leftSummaryBox a {background: #F2A400; text-align: center; width: 100%; border-radius: 5px; font-size: 20px; display: inline-block; margin: 30px auto 0; font-weight: bold; line-height: 60px;}
+.orderSummary .leftSummaryBox a:hover{background: #00244A; color: #fff;}
+.orderSummary .leftSummaryBox .sumTotalBox hr{float: left; margin: 20px 0; border-top: 1px solid #333; width: 100%;}
+.orderSummary .rightSummaryBox{float: right; margin: 40px;}
+.mapMainBox h1{margin: 0 !important; font-size: 18px; font-weight: 400; line-height: 26px;}
+.mapMainBox h1 span{font-size: 18px; font-weight: 700; display: block; padding: 10px; text-transform: uppercase;}
+/*found*/
+
+
+.orderBanner{padding-left: 15px; padding-right: 15px;}
+.orderBanner h2{font-size: 18px; font-weight: normal; margin: 20px 0 20px; line-height: 24px; color: #333;}
+.orderBanner h5 {font-size: 18px; line-height: 26px; padding: 0 10px; color: #333;}
+
+
+
+
+.topFootBox{background: #242A46; padding: 25px 0; margin: 70px 0 0; border-top: 5px solid #D9AD58;}
+.topFootBox .topFootCol h3,h2,h5{color: #fff; font-size: 20px; line-height: 40px; text-transform: uppercase;}
+.topFootBox .footerInfo{display: flex; flex-direction: column; margin: 0 0; align-items: flex-start; justify-content: space-between;}
+.topFootBox .footerInfo > div{display: flex; align-items: center; margin-right: 180px; margin: 20px 0 0;}
+.topFootBox .footerInfo p{font-size: 16px; line-height: 22px; color: #fff; padding-left: 20px;}
+.topFootBox p.disText{font-size: 16px; line-height: 22px; color: #fff; border: 1px solid #575757; padding: 12px 23px;}
+
+.emailPopForm .modal-dialog {width: 380px; background: #ffffff; border-radius: 3px; padding: 26px 30px 35px; text-align: center; border: 5px solid #d9d9d9; align-items: center;}
+.emailPopForm .modal-dialog h3{font-size: 15px; font-weight: normal; line-height: 22px; margin: 0 0 30px; border-bottom: 1px solid #c5c5c5; padding: 0 0 15px; color: #333;}
+.emailPopForm .modal-dialog form{display: flex; flex-direction: column;}
+.emailPopForm .modal-dialog input{border: 1px solid #c1c1c1; padding: 10px; margin: 0 0 10px;}
+.emailPopForm .modal-dialog {border: 0; padding: 8px; background: #F75587; color: #fff; font-size: 18px;}
+
+
+.billingSection{margin-bottom: 70px;}
+.billingSection .billingForm{width: 100%; padding: 0;}
+.billingSection .billingForm h2{font-size: 20px; font-weight: bold; margin: 15px 0 15px; color: #D9AD58; line-height: inherit;     text-transform: inherit;}
+.billingSection .billingForm .formgroup{text-align: left;}
+.billingSection .billingForm label{font-size: 16px; font-weight: normal; margin-bottom: 9px; float: left; text-align: left;}
+.billingSection .billingForm input{height: 60px; margin: 0 0 20px; border-radius: 5px; border:1px solid #D3D3D3; width: 100% !important; font-size: 16px; padding: 0 10px;}
+.billingSection .billingForm select{color:#333;height: 60px; margin: 0 0 20px; border:1px solid #C6C6C6; border-radius: 5px; width: 100% !important; font-size: 16px; padding: 0 10px; background: url(../images/arrow.png) right 20px no-repeat #fff; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+.billingSection .billingForm ::-moz-placeholder{color:#888;opacity:inherit !important; font-size: 19px; }
+.billingSection .billingForm :-ms-input-placeholder{color:#888}
+.billingSection .billingForm ::-webkit-input-placeholder{color:#888}
+.billingSection .billingForm p{font-size: 16px; color: #333; line-height: 26px;}
+.billingSection .billingForm .check {text-transform: inherit; display: block; position: relative; padding-left: 35px; margin-bottom: 12px; padding-right: 0; cursor: pointer; font-size: 16px;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 100%; margin: 30px auto; float: none; border-top:1px solid #D3D3D3 ; padding-top: 20px;}
+.billingSection .billingForm .check a{text-decoration: underline; color: #D9AD58; font-size: 16px;}
+.billingSection .billingForm .check input {position: absolute; opacity: 0; cursor: pointer; height: inherit; width: auto !important;}
+.billingSection .billingForm .checkmark {position: absolute; top: 17.5px; left: 0; height: 24px; width: 24px; background-color: #fff;
+    border-color: #d3d3d3; border-radius: 5px; border-style:solid; border-width:1px;}
+.billingSection .billingForm .check input:checked ~ .checkmark {background-color: #fff}
+.billingSection .billingForm .checkmark:after {content: ""; position: absolute; display: none;}
+.billingSection .billingForm .check input:checked ~ .checkmark:after {display: block;}
+.billingSection .billingForm .check .checkmark:after {left: 6px; top: 2px; width: 9px; height: 14px; border: solid; border-color:#D9AD58; border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+.billingSection .billingForm button{font-size: 18px; color: #fff; font-weight: bold; background: #D9AD58; line-height: 60px; margin: 30px auto 20px; width: 93%; display: block; text-align: center; border: 0; border-radius: 50px;}
+.billingSection .billingForm button:hover{color: #fff; background: #00244A;}
+.billingSection .billingForm h4{font-size: 20px; text-align: left; margin: 0 15px 30px; line-height: 42px;}
+img.cvvIcon{margin: -4px 8px 0;}
+
+
+.billBanner{height: 180px; background-size: 210% !important; background-position: 60% 90%; background: #255335;}
+.billingPG{margin-top: -40px;}
+.billingPG h1{font-size: 30px !important; text-align: center; color: #fff; padding: 35px 20px; width: 90%; margin: 0 auto;}
+.billingPG h1 span{font-size: 18px !important; display: block; color: #00244A; margin: 15px 0 0; text-transform: uppercase; font-weight: normal;}
+.billingSection .billingmainBox{display: flex; justify-content: space-between; padding: 10px 5px 0; background: #fff; 
+    box-shadow: none; margin: 0 ; flex-direction: column;}
+.billingSection .billingmainBox .billingSmryBox{width: 100%; margin: 30px 0 0; padding: 0 15px;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox{background: #1F3756; padding: 30px 25px 45px; border-radius: 5px;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox h3{color: #fff; border-bottom: 5px solid #fff; padding: 0 0 12px; margin: 0 0 28px;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox .priceBx{display: flex; justify-content: space-between;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox .priceBx p{color: #fff; font-size: 18px;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox hr{margin-top: 10px; margin-bottom: 10px;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox h4{color: #fff; font-size: 30px; padding: 70px 0 5px; text-align: center;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox h6{color: #fff; font-size: 18px; font-weight: normal; text-align: center;}
+
+.billingSection .billingmainBox .billingSmryBox .reportBox{background: #F2F2F2; padding: 30px 25px; border-radius: 5px; margin: 20px 0;}
+.billingSection .billingmainBox .billingSmryBox .reportBox h3{color: #02244A; border-bottom: 4px solid #333; font-size: 20px; padding: 0 0 16px; margin: 0 0 20px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox ul li {font-size: 16px; position: relative; line-height: 36px; margin-left: 35px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox ul li::before {content: ""; left: -35px; width: 8px; height: 8px; background: #063D8B;
+        position: absolute; margin-top: 13px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox p{font-size: 16px;}
+
+.billingSection .billingmainBox .billingForm .cardNum{display: flex; justify-content: space-between; align-items: center;}
+.billingSection .billingmainBox .billingForm .cardNum p{padding: 0 0 15px; font-size: 14px; color: #000; margin-top: -17px;}
+
+.billingSection .billingForm .sprtr{background: #D3D3D3; width: 100%; height: 1px; position: relative;}
+.billingSection .billingForm .sprtr::after{width: 66px; height: 5px; background: #D9AD58; position: absolute; content: ""; top: -2px; left: 0;}
+.billingSection .billingForm .billTopTxt p{line-height: 28px; margin: 35px 0 0;}
+.billingSection .billingForm .billTopTxt p span{font-weight: bold; font-size: 20px; display: block; margin: 0 0 0; border-bottom: 0;
+    padding: 0 0 5px;}
+.billingSection .billingForm .billTopTxt ul{margin: 30px 0;}
+.billingSection .billingForm .billTopTxt ul li{font-size: 16px; line-height: 24px; margin-left: 25px; margin-top: 15px;}
+.billingSection .billingForm .billTopTxt ul li::before {content: ""; left: 18px; width: 8px; height: 8px; background: #d9ad58; position: absolute; margin-top: 8px;}
+.billingSection .billingForm .billTopTxt hr {border-top: 1px solid #D3D3D3; margin-top: 30px; margin-bottom: 30px;}
+.billingSection .billingForm .spBlck{margin: 25px 0 15px;}
+.billingSection .billingForm .spBlck::after{height: 5px; background: #333; position: absolute; content: ""; top: -2px; left: 0;}
+img.cardIMG {margin: 0 0 20px;}
+
+
+.contacInfo hr{width: 200px; margin: 30px auto 40px; border-color: #AFAFAF;}
+.contactPg{margin: -90px 0 0;}
+.contactPg h5{font-size: 24px; line-height: inherit; text-align: center;}
+.contactPg .contactDtalBx{display: flex; justify-content: space-around; text-align: center; margin: 40px 0 0; flex-direction: column;}
+.contactPg .contactDtalBx > div{width: 90%; margin: 0 auto; padding: 0 0 50px;}
+.contactPg .contactDtalBx > div p{margin: 20px 0 0;}
+.contactPg .contactDtalBx > div span{display: block; line-height: 24px; margin: 5px 0 0;}
+.contactPg .contactDtalBx p{color: #333;}
+
+.contactDetail{top: 0; margin: 0 0 10px; text-align: center;}
+.contactDetail h6{font-size: 24px; margin: 10px 0 30px; color: #333;}
+.contactDetail p{font-size: 18px; line-height: 24px; margin: 25px 0 15px; color: #333;}
+.contactDetail p span{display: inline;}
+.contactDetail a{margin: 0 auto; width: 100%;}
+.bottomFootBox .textRight{text-align: center; margin: 20px 0 0;}
+
+.fLinkBx{border-top: 1px solid #D9AD58; border-bottom: 1px solid #D9AD58; padding: 13px 0; margin: 0 0 40px;}
+.warningPg .saveBox hr {border-top: 2px solid #C6C6C6; margin-top: 20px; margin-bottom: 20px;}
+.warningPg .saveBox p a{color: #D9AD58; text-decoration: underline;}
+.warningPg .saveBox a.aggrBtn{background: #D9AD58; border-radius: 3px; color: #fff; font-weight: 700; line-height: 60px; width: 280px; text-align: center; display: block; font-size: 18px; top: 20px; position: relative; margin: 0 0 35px;}
+
+.resultPg a{width: 100%;}
+.resultPg ul{width: 100%; border: 0 !important; float: left; padding: 10px 0 10px !important;}
+.resultPg ul li{color: #02244A;}
+.resultPg h4{font-size: 20px; color: #02244A; margin: 0 0 25px;}
+p.frmtxt{margin: 20px 0 0 !important;}
+
+.colorBg{background: #242A46; padding:70px 0 40px;}
+.colorBg h3{color: #fff;}
+.colorBg p{color: #fff;}
+.titleBot{margin: 0 0 20px;}
+
+.greyBg {background: #F9F9F9; padding: 40px 0;}
+.bottomHis h3{margin: 0  !important;}
+.bottomHis h3 span{font-size: 20px; display: block; font-weight: normal;}
+
+.carImg{position: absolute; top: -30px; right: 4%; width: 220px;}
+
+@media screen and (max-width: 767px) {
+header .headerBox {margin: 0;}
+header .headerBox .infoBox .infoTBox h6 {font-size: 15px; line-height: 35px; padding: 0 10px; float: left; margin-right: 5px;}
+header .headerBox .infoBox .infoTBox h4 {font-size: 15px; line-height: 15px; height: 35px; padding-right: 10px; text-align: right; padding-top: 3px;}
+header .headerBox .navbar .logo {float: left; padding: 12px 0 0;}
+header .headerBox .navbar .logo img{float: left; width: 75px;}
+header .headerBox .navbar .logo p{float: left; line-height: 55px; font-size: 19px; padding-left: 10px;}
+header .headerBox .container-fluid>.navbar-header{margin: 0;}
+header .navbar-default .navbar-collapse{margin: 0; border-color: #f2a400; background: #fff;}
+header .navbar-nav{margin: 7.5px 0; float: left; width: 100%;}
+header .navbar-default .navbar-nav>li>a {font-size: 15px; padding: 0; line-height: 35px; text-align: left;}
+header .headerBox .infoBox .infoBBox h3 {font-size: 15px; color: #00244a; background: #e3e3e3; line-height: 35px;text-align: center; margin: 10px 0 3px; height: auto;}
+header .navbar-default .navbar-toggle{border: 0; margin-top: 21px; margin-right: 0; padding-right: 0;}
+header .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background: none;}
+header .navbar-default .navbar-toggle .icon-bar {background-color: #f2a400;}
+header .headerBox .infoBox .infoTBox h4 span {font-size: 14px; display: block;}
+header .H_rightbox a::after {right: -18px;}
+.formSection .bannerFormBox .botFormSec input.fullW {width: 100% !important;}
+.formSection .bannerFormBox .botFormSec input, select {width: calc(53.6% - 15px);}
+.banner .bannerLeftBox a {margin: 20px auto 0;}
+.infoSec a {width: 90%;}
+}
+
+
+@media screen and (max-width: 380px) {
+.formSection .bannerFormBox .botFormSec input, select {width: calc(54.1% - 15px) !important;}
+
+.banner .bannerFormBox .topFormSec .radio {padding-left: 25px; font-size: 15px;}
+}
+
+@media screen and (max-width: 370px) {
+header .headerBox {margin: 0;}
+header .headerBox .infoBox .infoTBox h6 {font-size: 14px;}
+header .headerBox .infoBox .infoTBox h4 {font-size: 14px; padding-top: 1px;}
+header .H_rightbox a {margin: 0 9px;}
+header .H_rightbox a::after {right: -9px;}
+
+header .headerBox .navbar .logo p {line-height: 57px; font-size: 15px;}
+header .navbar-default .navbar-toggle {margin-top: 22px;}
+
+.formSection .bannerFormBox {margin: 20px 0 0;}
+.banner .bannerLeftBox h6 {font-size: 20px;}
+.formSection .bannerFormBox .topFormSec .radio {padding-left: 25px; font-size: 15px;}
+.formSection .bannerFormBox .botFormSec input, select {width: calc(53.8% - 12px) !important;}
+.banner .fieldBox select {width: 100% !important;}
+.infoSec h3 {font-size: 17px; line-height: 28px;}
+.infoSec a {margin: 0 auto 0; width: 90%;}
+.systemSec h3 {font-size: 26px;}
+.systemSec h3 span {font-size: 16px;}
+.innerBannerSec {padding: 15px 0 130px;}
+.innerBannerSec h1 {font-size: 23px;}
+.innerBannerSec h3 {font-size: 16px; padding: 15px 10px 25px; line-height: 25px;}
+.compren_pnt h1 {font-size: 15px;}
+.orderSummary .rightSummaryBox {margin: 15px 10px;}
+
+
+.mapMainBox h1 span {font-size: 16px;}
+.orderBanner h5 {font-size: 17px;}
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+header .Htop_bar h6 {text-align: left; line-height: 45px;}
+header .Htop_bar .infoTBox {display: flex;}
+header .H_rightbox a {margin: 0 15px; line-height: 45px;}
+header .H_rightbox a::after {right: -15px;}
+header .H_rightbox{margin: 0 ;}
+header .headerBox{display: inherit;}
+header .headerBox .logoBox{width: 100%; display: flex; justify-content: center; padding: 15px 15px 0;}
+header .headerBox .logoBox p{line-height: 77px;}
+header .headerBox .infoBox {width: 100%;}
+header .headerBox .infoBox .infoTBox{display: flex; justify-content: space-between;}
+header .headerBox .infoBox .infoTBox h6 {font-size: 15px; padding: 0 15px;}
+header .headerBox .infoBox .infoTBox h4 {font-size: 15px; padding-right: 15px;}
+header .headerBox .infoBox .infoBBox{display: flex; justify-content: space-between;}
+header .headerBox .infoBox .infoBBox h3{display: none;}
+header .navBox {width: 100%;}
+header .navbar-default .navbar-nav>li>a {padding: 0 19.9px; line-height: 60px;}
+header .navbar-nav {float: none; text-align: center;}
+header .navbar-nav>li{display: inline-block; float: none;}
+
+.banner{padding: 35px 0;}
+.banner .bannerLeftBox {padding: 0 0 40px; text-align: left;}
+.banner .bannerLeftBox h6{font-size: 36px;}
+.banner .bannerLeftBox h1{font-size: 50px; margin: 30px 0 0;}
+.banner .bannerLeftBox p{margin: 15px 0 35px}
+.formSection .bannerFormBox{width: 100%; margin: 0 auto; float: none; position: relative; display: flex; align-items: center;    justify-content: space-between;}
+
+.formSection .bannerFormBox .topFormSec .radio {margin: 12px 5px; font-size: 14px; width: 160px; float: left; text-align: left; padding-left: 18px;}
+.formSection .bannerFormBox .botFormSec{padding: 20px 20px 15px; text-align: center;}
+.formSection .bannerFormBox .botFormSec .formFieldBox{display: block;}
+.formSection .bannerFormBox .botFormSec input, select {width: 150px; margin-right: 5px; margin-bottom: 7px;}
+.formSection .bannerFormBox .botFormSec .mr0{margin-right: 0;}
+.formSection .bannerFormBox .topFormSec .checkround {top: 10px; left: -10px;}
+.formSection .bannerFormBox .botFormSec input.fullW {width: 240px;}
+
+.formSection .bannerFormBox .botFormSec{display: flex;}
+.formSection .bannerFormBox .botFormSec button{width: 30%;}
+
+.infoSec{padding:40px 0 0}
+.infoSec h3{font-size: 36px; line-height: 42px; margin: 0 0 60px; padding: 0}
+.infoSec .infoSecBox{display: flex; padding: 0 5px; margin: 0 0 50px; justify-content: space-between;}
+.infoSec .leftinfoBox{width: 100%; padding: 0 15px 0 10px;}
+.infoSec .leftinfoBox blockquote h4{padding-left: 0; margin: 12px 0 15px; font-size: 19px;}
+.infoSec .leftinfoBox blockquote img{float: left;}
+.infoSec .rightinfoBox blockquote h4{padding-right: 50px; padding-left: 0;}
+.infoSec .leftinfoBox blockquote {text-align: left; margin: 0 0 15px; min-height: 150px;}
+.infoSec .rightinfoBox blockquote {text-align: left; float: left; width: 50%;}
+.infoSec .rightinfoBox blockquote p{padding-left: 75px;}
+.infoSec .middelinfoBox{margin: 40px 10px; padding-left: 0;}
+.infoSec a{margin: 20px auto 0;}
+
+.systemSec{padding: 50px 0 ;}
+.systemSec h3{font-size: 38px; line-height: 42px; margin: 0 0 50px;}
+.systemSec blockquote{text-align: center; margin: 0; min-height: 240px}
+.systemSec blockquote h5{line-height: inherit;}
+
+
+footer{padding: 20px 0; text-align: center;}
+footer p{margin: 10px 0 0; text-align: center;}
+
+.innerBannerSec{padding: 35px 0 140px;}
+.innerBannerSec h1 {font-size: 36px;}
+.innerBannerSec h3 {font-size: 20px; padding: 27px 0 30px;}
+.innerBannerSec a.conBtn{width: 320px; line-height: 70px;}
+.compren_pnt{margin: -60px 0 0;}
+.compren_pnt h1{font-size: 24px; line-height: 50px; margin: 0 0 20px;}
+.compren_pnt ul{padding: 5px 0; border-right: 1px solid #E3E3E3; margin: 0 0 5px;}
+.compren_pnt ul li{font-size: 14px; line-height: 33px; background: url(../images/sqPnt.jpg) 0 11px no-repeat;}
+
+
+
+.innerBannerSec2{padding: 35px 0 160px;}
+.mapMainBox {margin: -103px 0 100px;}
+.mapMainBox h1{margin: 0 !important; font-size: 24px; font-weight: 400; line-height: 36px; padding: 15px 10px;}
+.mapMainBox h1 span{font-size: 24px; padding: 20px 30px 0;}
+
+.privacyTextBox {margin: 60px 0 0;}
+.privacyTextBox p{font-size: 18px; line-height: 26px; margin: 0 0 60px;}
+.orderSummary{margin: 0 0 70px;}
+.orderSummary .leftSummaryBox{width: 50%; margin: 10px 0 0;}
+.orderSummary .leftSummaryBox h4{font-size: 28px;}
+.orderSummary .leftSummaryBox .sumTotalBox{padding: 30px 30px 40px;}
+.orderSummary .leftSummaryBox .sumTotalBox hr{margin: 30px 0;}
+.orderSummary .leftSummaryBox a {margin: 50px auto 0; line-height: 70px;}
+.orderSummary .leftSummaryBox p{font-size: 20px;}
+.orderSummary .rightSummaryBox{float: right; margin: 50px 0 0; width: 45%;}
+
+
+.orderBanner{padding-left: 0; padding-right: 0;}
+.orderBanner h1{padding: 20px 30px;}
+.orderBanner h2{font-size: 24px; line-height: inherit; padding: 0 70px; line-height: 30px; text-transform: uppercase; font-weight: 700;}
+.orderBanner h5{font-size: 20px; margin: 15px 0 0; line-height: 35px; font-weight: 400;}
+.orderBanner h5 span{font-size: 24px; font-weight: 700; display: block;}
+
+.topFootBox {padding: 65px 0 15px; margin: 70px 0 0;}
+
+.billingSection{margin-bottom: 0;}
+.billingSection h1{font-size: 20px;}
+.billingSection .billingForm {width: 80%; margin-left: 10px;}
+
+
+.billingSection .billingForm label{font-size: 18px;}
+.billingSection .billingForm input{height: 60px; margin: 0 0 17px; font-size: 18px; padding: 0 20px;}
+.billingSection .billingForm select{height: 60px; margin: 0 0 35px; font-size: 18px; padding: 0 20px; background: url(../images/arrow.png) right 26px no-repeat #fff;}
+.billingSection .billingForm p{font-size: 16px;}
+.billingSection .billingForm .checkmark {top: 25.5px; left: 20px;}
+.billingSection .billingForm .check {font-size: 18px; padding: 22px; padding-left: 60px; border: 1px solid #D3D3D3; width: 100%;}
+.billingSection .billingForm .check a{font-size: 20px;}
+.billingSection .billingForm button{margin: 10px auto; width: 330px; float: left; font-size: 20px;}
+.billingSection .billingForm h4{font-size: 24px;}
+img.cardIMG{margin: 43px 0 0;}
+
+.billBanner{height: 140px; background-position: 60% 90%; background-size: 140% !important; padding: 0;}
+.billingPG{margin-top: 0;}
+.billingPG h1{font-size: 40px !important; text-align: center; padding: 20px 0; width: auto;}
+.billingPG h1 span{display: block; margin: 15px 0 0;}
+.billingSection .billingmainBox{flex-direction: row; padding: 30px 20px 50px 0; margin: 0 0 10px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; }
+.billingSection .billingmainBox .billingSmryBox{width: 360px;}
+.billingSection .billingForm .billTopTxt ul li{font-size: 16px; line-height: 36px; margin-top: 0;}
+.billingSection .billingForm .billTopTxt ul li::before {margin-top: 13px;}
+.billingSection .billingForm .billTopTxt hr {margin-top: 50px; margin-bottom: 50px;}
+.billingSection .billingmainBox .billingForm .cardNum p{padding: 0; margin-top: 0;}
+.billingSection .billingmainBox .billingSmryBox{padding: 0; margin: 20px 0 0; }
+.billingSection .billingmainBox .billingSmryBox .reportBox{margin: 40px 0;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox{padding: 20px 20px 30px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox{padding: 20px 20px; background: #F2F2F2;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox h4{text-align: left;}
+.billingSection .billingmainBox .billingSmryBox .orderSumBox h6{text-align: left;}
+
+.contacInfo hr{margin: 50px auto 40px;}
+.contactPg h5{font-size: 30px;}
+.contactPg .contactDtalBx{flex-direction: row;}
+.contactPg .contactDtalBx > div{width: 320px; margin: 0; padding: 0;}
+
+.orderSec{margin: 50px 0 60px;}
+.orderSec .col-md-12{display: flex;}
+.orderSec .row > div > div{width: 50%;}
+.orderSec h3{font-size: 35px; margin: 0;}
+.orderSec a{margin: 40px 0 0;}
+
+.dontsec{margin: 70px 0;}
+.dontsec h3{margin: 22px 0 0;}
+.topFootBox .footerInfo{flex-direction: row; margin: 0 0 60px; align-items: center; margin: 0 0 40px; flex-wrap: wrap;}
+.topFootBox .footerInfo > div{margin: 0;}
+.bottomFootBox .textRight{text-align: right; margin: 0;}
+
+.mapBox{padding: 50px 40px 60px;}
+.mapBox::after{width: calc(100% - 80px); top: 13px; left: 40px;}
+.packPage .saveBox h3{font-size: 30px; line-height: 38px;}
+.packPage .saveBox hr{margin-bottom: 40px;}
+.pointBox h2{font-size: 30px; line-height: 40px;}
+
+.contactDetail a{width: 320px;}
+.contactDetail{ margin: 50px 0 10px;}
+.contactPg{margin: -100px 0 0;}
+
+.warningPg .saveBox hr {margin-bottom: 35px;}
+
+.resultPg ul{margin: 20px 0 50px;}
+
+.greyBg {background: #F9F9F9; margin: 0 !important; padding: 60px 0;}
+
+.formSection .bannerFormBox .topFormSec{padding-left: 40px;}
+.banner .bannerLeftBox a{text-align: center; float: left;}
+.banner .fieldBox .fldBX{width: 32.5%;}
+.banner .fieldBox input{height: 60px;}
+.banner .fieldBox select{height: 60px;}
+.formSection {padding: 35px 0;}
+.formSection .bannerFormBox h2{font-size: 26px;}
+.orderSec{margin: 30px 0 60px;}
+.dontsec h3{margin: 50px 0 0;}
+.bottomHis h3 span{font-size: 36px;}
+.orderSec .dividerH{margin: 30px 0 60px;}
+.orderSec p{margin: 0 0 40px;}
+.resultPg ul{width: 33.333%; padding: 0 !important;}
+.resultPg a{width: 350px;}
+.carImg{top: -226px; right: 50px; width: 320px;}
+}
+
+
+
+
+@media all and (min-width:991px) {
+blockquote p{font-size: 18px; margin-left: 75px;}
+
+header .headerBox{display: flex;}
+header .navbar-nav {float: right; margin-right: 10px;}
+header .headerBox .logoBox{padding: 20px 0 20px 0; display: inherit; justify-content: left; width: 270px;}
+header .headerBox .logoBox p{line-height: 77px;}
+header .headerBox .infoBox {width: calc(100% - 270px);}
+header .headerBox .infoBox .infoTBox h6 {font-size: 18px; padding: 0 50px;}
+header .headerBox .infoBox .infoTBox h4 {font-size: 20px; padding-right: 40px;}
+header .headerBox .infoBox .infoBBox h3{display: inherit; padding: 0 15px; font-size: 18px; width: 210px;}
+header .navBox {width: calc(100% - 160px);}
+header .navbar-default .navbar-nav>li>a {padding: 0 10px; line-height: 110px;}
+header .navbar-nav>li{display: block; float: left;}
+header .H_rightbox a {margin: 0 25px;}
+header .H_rightbox a::after {right: -25px;}
+
+
+.banner{padding: 0; height: 666px;}
+.banner .bannerLeftBox {padding: 60px 0 0px}
+.banner .bannerLeftBox h1{font-size: 50px;}
+.formSection .bannerFormBox .botFormSec h2{text-align: left;}
+.formSection .bannerFormBox .botFormSec{padding: 30px 0 10px; }
+.formSection .bannerFormBox .botFormSec .formFieldBox{display: flex;}
+.formSection .bannerFormBox .botFormSec input, select {width: 130px; margin-right: 5px; margin-bottom: 0;}
+.formSection .bannerFormBox .topFormSec .radio {margin: 0 20px; font-size: 18px;}
+.formSection .bannerFormBox .topFormSec .checkround {top: 14px; left: -20px;}
+
+.infoSec {padding: 100px 0 0;}
+.infoSec .infoSecBox {margin: 0 0 0; padding: 0 55px;;}
+.infoSec .leftinfoBox{padding: 0; width: 365px;}
+.infoSec .leftinfoBox blockquote h4{padding-left: 50px; font-size: 22px;}
+.infoSec .leftinfoBox blockquote {text-align: right; margin: 0 0 50px; min-height: 190px; border: 0; min-height: inherit;}
+.infoSec .rightinfoBox blockquote {text-align: left; float: none; width: 100%;}
+.infoSec .rightinfoBox blockquote p{padding-left: 0;}
+.infoSec .rightinfoBox blockquote h4{padding-right: 50px; padding-left: 0;}
+.infoSec .middelinfoBox{margin: 0; text-align: center; width: 750px;}
+.infoSec .middelinfoBox img{width: 85%; margin: 0}
+.infoSec a{margin: 30px auto 50px;}
+
+.homeList ul li{width: 265px;}
+
+.systemSec{padding: 80px 0}
+.systemSec h3{font-size: 48px;margin: 0 0 100px;}
+.systemSec blockquote{min-height: inherit;}
+
+footer{text-align: inherit;}
+footer p{margin: 0;}
+
+.resultPg h4{font-size: 24px;}
+
+.innerBannerSec h1 {font-size: 48px; margin: 45px 0 25px;}
+.innerBannerSec h3 {font-size: 24px;}
+.compren_pnt{margin: -70px 0 0;}
+.compren_pnt h1{font-size: 26px; line-height: 60px; margin: 0 0 30px;}
+.compren_pnt ul {padding: 5px 10px;}
+.compren_pnt ul li {font-size: 18px;}
+.compren_pnt a.grn_btn {padding: 0 30px;}
+
+.innerBannerSec2{padding: 50px 0 180px; height: 350px;}
+.mapMainBox {margin: -111px 0 120px;}
+.mapMainBox h1{margin: 0 !important; font-size: 24px; font-weight: 400; line-height: 36px; padding: 36.5px 100px;}
+
+.orderBanner h1{padding: 45px 0 25px;}
+.orderBanner h2 {padding: 0; line-height: inherit;}
+
+.systemSec blockquote p{margin: 0 25px 35px;}
+.systemSec blockquote h5{font-size: 16px;}
+.dontsec h3 {font-size: 20px;}
+
+.topFootBox {padding: 50px 0 15px;}
+
+.billingSection h1{font-size: 26px;}
+.billingSection .billingForm {width: 600px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox h3{font-size: 18px;}
+.billingSection .billingForm h2{font-size: 26px; margin: 15px 0 25px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox ul li {font-size: 18px}
+.billingSection .billingmainBox .billingSmryBox .reportBox p{font-size: 18px;}
+.billingSection .billingForm .billTopTxt ul li{font-size: 18px;}
+.billingSection .billingForm .billTopTxt p span{font-size: 22px;}
+.billingSection .billingForm h4{font-size: 24px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox h3{font-size: 22px;}
+.billingSection .billingForm p{font-size: 18px;}
+.billBanner{height: 350px; background-position: center !important; background-size: cover !important;}
+
+.billingPG h1{font-size: 48px !important; padding: 80px 0;}
+
+.billingSection .billingmainBox{padding: 30px 30px 50px;}
+.billingSection .billingmainBox .billingSmryBox{width: 380px;}
+
+.contacInfo hr{margin: 0 auto 60px;}
+
+.orderSec{margin: 50px 0 60px;}
+
+.mapBox{padding: 40px 100px 100px;}
+.mapBox::after{width: calc(100% - 200px); top: 0; left: 100px;}
+.mapMainBox h1 span{font-size: 22px; padding: 0;}
+
+.packPage {padding: 40px 60px;}
+.billingPG {margin-top: -110px;}
+
+.banner .topFormSec {padding: 14px 0 32px;}
+.banner .topFormSec .col{display: flex; justify-content: flex-start; align-items: flex-start;}
+.banner .topFormSec .radio {margin: 12px 0; font-size: 18px; width: 190px; margin-right: 90px;}
+.banner .topFormSec .checkround {top: 2px;}
+
+.carImg{top: -105px; right: 50px; width: 380px;}
+}
+
+@media all and (min-width:1200px) {
+.container {width: 1200px;}
+
+.compren_pnt ul {padding: 5px 50px;}
+.billingSection .billingForm {width: 810px;}
+.billingSection .billingForm h2{font-size: 36px; margin: 15px 0;}
+
+header .navbar-nav {float: right; margin-right: 70px;}
+header .headerBox .infoBox .infoBBox h3{width: auto;}
+
+.packPage {padding: 60px 100px;}
+.orderSec{margin: 100px 0 60px;}
+.carImg {top: -135px; right: 110px; width: 500px;}
+}
+
+
+@media all and (min-width:1360px) {
+header .container{width: 1330px}
+.banner .container{width: 1330px}
+.formSection .container{width: 1330px}
+.innerBannerSec .container{width: 1330px}
+.dontsec .container{width: 1330px}
+.infoSec .container{width: 1290px}
+.compren_pnt .container{width: 1330px}
+.topFootBox .container{width: 1330px}
+.bottomFootBox .container{width: 1330px}
+.cuScontainer {width: 1320px;}
+
+header .navBox {width: calc(100% - 230px);}
+header .navbar-default .navbar-nav>li>a{font-size: 18px; padding: 0 30px;}
+header .headerBox .infoBox .infoBBox h3{padding: 0 22px; font-size: 20px;}
+
+.banner{background-size: 150% !important;}
+.formSection .topFormSec .radio {margin: 0 30px;}
+.formSection .botFormSec input.fullW {width: 370px;}
+.formSection .botFormSec input, select {width: 167px;}
+
+.mapMainBox h1 span{font-size: 30px;}
+
+.banner .bannerLeftBox {padding: 60px 0 0px}
+.banner .bannerLeftBox h1{font-size: 60px;}
+.orderSec h3{font-size: 48px; margin: 80px 0 0;}
+.bottomHis h3{font-size: 39px;}
+
+.systemSec blockquote p{margin: 0 35px 35px;}
+.systemSec blockquote h5{font-size: 18px;}
+
+.dontsec h3 {font-size: 24px;}
+
+.infoSec .infoSecBox {margin: 0 0 80px;}
+.infoSec .leftinfoBox{padding: 0;}
+.infoSec .middelinfoBox img{width: auto; margin: 0 20px;}
+.infoSec .leftinfoBox blockquote h4{padding-left: 100px;}
+.infoSec .rightinfoBox blockquote h4{padding-right: 100px; padding-left: 0}
+
+.innerBannerSec {padding: 50px 0 140px;}
+.compren_pnt h1{line-height: 70px;}
+
+.innerBannerSec2{padding: 50px 0 175px;}
+
+.mapMainBox {margin: -111px 0 110px;}
+.mapMainBox h1{margin: 0 !important; font-size: 24px; font-weight: 400; line-height: 36px;}
+
+
+.orderSummary{margin: 0 0 110px;}
+.orderSummary .leftSummaryBox{width: 500px; margin: 75px 0 0;}
+.orderSummary .leftSummaryBox h4{font-size: 36px;}
+.orderSummary .leftSummaryBox .sumTotalBox{padding: 50px 50px 60px;}
+.orderSummary .rightSummaryBox{margin: 0; width: auto;}
+
+.topFootBox{padding: 65px 0 15px; margin: 90px 0 0;}
+.topFootBox .topFootCol h3,h2,h5{font-size: 24px;}
+
+.billingSection .billingmainBox .billingSmryBox .orderSumBox{padding: 30px 40px 45px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox{padding: 30px 40px;}
+.billingSection .billingmainBox .billingSmryBox .reportBox h3{font-size: 22px;}
+
+.contactDetail p span{display: block;}
+.contacInfo hr{margin: 0 auto 60px;}
+
+.packPage {padding: 70px 120px;}
+.orderBanner h1{padding: 0 0 25px;}
+
+.carImg {top: -170px; right: 11%; width: 600px;}
+}
+
+@media all and (min-width:1600px) {
+.carImg{top: -230px; right: 8%; width: auto;}
+}
+
+@media all and (min-width:1700px) {
+.banner{background-size: cover !important;}
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px)  {
+
+}
+
